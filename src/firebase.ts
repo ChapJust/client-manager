@@ -13,8 +13,11 @@ const firebaseConfig = {
   projectId: "client-manager-app-e0058",
   storageBucket: "client-manager-app-e0058.firebasestorage.app",
   messagingSenderId: "452976841094",
-  appId: "1:452976841094:web:2426d63fde3298f8dd9c07"
+  appId: "1:452976841094:web:2426d63fde3298f8dd9c07",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app);
+export const auth = getAuth(app);
