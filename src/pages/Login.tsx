@@ -32,6 +32,7 @@ function Login() {
           <label>Password:</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
+
         {error && <p className="error-message">{error}</p>}
         <button type="submit" className="login-button">
           Login
